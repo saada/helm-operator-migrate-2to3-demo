@@ -3,10 +3,10 @@ kind: HelmRelease
 metadata:
   name: weave-scope
   namespace: default
-  annotations:
+  annotations: # add the annotation
     helm.fluxcd.io/migrate: "true"
 spec:
-  helmVersion: v3
+  helmVersion: v3 # set the helmVersion to v3
   releaseName: weave-scope
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com
